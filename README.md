@@ -19,12 +19,6 @@ Custom Triton kernels for deep learning primitives
 
 ## Benchmarks
 
-
-Tested on RTX 5070 Ti, CUDA 13.0
-
-
-## Benchmarks
-
 Tested on RTX 5070 Ti, CUDA 13.0
 ```bash
 PYTHONPATH=. python benchmarks/run_benchmarks.py
