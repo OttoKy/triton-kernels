@@ -51,8 +51,9 @@ def softmax_kernel(
         tl.store(output_row_start + col_offset, output.to(tl.float16), mask=mask)
 
 
+# wrapper
 def softmax(x: torch.Tensor) -> torch.Tensor:
-    # wrapper
+
     original_shape = x.shape
     x = x.contiguous().view(-1, x.shape[-1])
     n_rows, n_cols = x.shape
